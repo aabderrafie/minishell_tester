@@ -86,12 +86,6 @@ The `tests/` directory contains various subdirectories, each focusing on a speci
 - **syntax-errors/**: Tests for various syntax errors.
 - **unset/**: Tests for the `unset` command.
 
-## Example
-
-Below is an example of the tester output:
-
-![Example Output](tester/example)
-
 ## Notes
 
 - Ensure that your Minishell does not produce memory leaks. Use tools like `valgrind` to check for memory issues.
