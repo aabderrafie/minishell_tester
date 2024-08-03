@@ -87,7 +87,7 @@ The `tests/` directory contains various subdirectories, each focusing on a speci
 - **unset/**: Tests for the `unset` command.
 
 ## Notes
-![Example Output]([https://example.com/path/to/image.png](https://github.com/aabderrafie/minishell_tester/blob/main/tester/example.png))
+![Example Output](https://raw.githubusercontent.com/aabderrafie/minishell_tester/main/tester/example.png)
 
 - Ensure that your Minishell does not produce memory leaks. Use tools like `valgrind` to check for memory issues.
 - The tests cover a wide range of scenarios, but it's still advisable to conduct manual testing to catch any edge cases not covered by the tester.
