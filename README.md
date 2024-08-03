@@ -27,10 +27,13 @@ tests/
 
 To use the tester, follow these steps:
 
-1. **Navigate to the Tester Directory**:
-   ```sh
-   cd /path/to/minishell/tester
-   ```
+1. ## Installation
+Clone the repository and navigate to the project directory:
+
+```sh
+git clone https://github.com/aabderrafie/pipex_42.git
+cd pipex
+```
 
 2. **Run the Test Script**:
    To run all tests, execute:
