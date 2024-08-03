@@ -31,8 +31,8 @@ To use the tester, follow these steps:
 Clone the repository and navigate to the project directory:
 
 ```sh
-git clone https://github.com/aabderrafie/pipex_42.git
-cd pipex
+git clone https://github.com/aabderrafie/minishell_tester.git
+cd tester
 ```
 
 2. **Run the Test Script**:
