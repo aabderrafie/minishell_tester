@@ -92,10 +92,6 @@ modify-results () {
 	# TODO: This is choosing to ignore the SHLVL environment variable
 	modify-result "SHLVL=.*" "SHLVL=IGNORED"
 
-	# This is choosing to ignore OLDPWD since it has really weird behavior in bash,
-	# like not being printed with `env` the first time, but being printed with `export` the first time:
-	# https://unix.stackexchange.com/questions/242909/why-does-bash-clear-oldpwd-when-a-child-script-is-started
-	# From running `export`
 	modify-result "declare -x OLDPWD.*" "declare -x OLDPWD=IGNORED"
 	# From running `env`
 	modify-result "OLDPWD=.*\n" ""
@@ -315,7 +311,6 @@ usage () {
 	exit 2
 }
 
-# Source: https://stackoverflow.com/a/49573433/13279557
 exit_on_failure=0
 dont_modify_results=0
 while getopts em name
@@ -327,17 +322,11 @@ do
     esac
 done
 
-# Source: https://unix.stackexchange.com/a/214151/544554
-# "shift n removes n strings from the positional parameters list.
-# Thus shift $((OPTIND-1)) removes all the options that have been parsed
-# by getopts from the parameters list, and so after that point,
-# $1 will refer to the first non-option argument passed to the script."
+
 shift $(($OPTIND - 1))
 
 tester_dir_path=$PWD
-
-# Collects all user passed directories and files and prepends the tests/ path
-# Source: https://stackoverflow.com/a/38558776/13279557
+# If the user passed a directory, appends the tests directory to it
 set -- "${@/#/$tester_dir_path/tests/}"
 test_directories_and_files=$@
 
