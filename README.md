@@ -85,9 +85,11 @@ The `tests/` directory contains various subdirectories, each focusing on a speci
 - **rmdir/**: Tests for the `rmdir` command.
 - **syntax-errors/**: Tests for various syntax errors.
 - **unset/**: Tests for the `unset` command.
+## Example
+Below is an example of the tester output:
+![Example Output](https://raw.githubusercontent.com/aabderrafie/minishell_tester/main/tester/example.png)
 
 ## Notes
-![Example Output](https://raw.githubusercontent.com/aabderrafie/minishell_tester/main/tester/example.png)
 
 - Ensure that your Minishell does not produce memory leaks. Use tools like `valgrind` to check for memory issues.
 - The tests cover a wide range of scenarios, but it's still advisable to conduct manual testing to catch any edge cases not covered by the tester.
