@@ -33,8 +33,14 @@ To use the tester, follow these steps:
    ```
 
 2. **Run the Test Script**:
+   To run all tests, execute:
    ```sh
    ./test.sh
+   ```
+   To run tests for a specific category, such as `cat` or `heredoc`, provide the category name as an argument:
+   ```sh
+   ./test.sh cat
+   ./test.sh heredoc
    ```
 
 3. **Provide the Path to Your Minishell**:
@@ -77,6 +83,12 @@ The `tests/` directory contains various subdirectories, each focusing on a speci
 - **syntax-errors/**: Tests for various syntax errors.
 - **unset/**: Tests for the `unset` command.
 
+## Example
+
+Below is an example of the tester output:
+
+![Example Output](example.png)
+
 ## Notes
 
 - Ensure that your Minishell does not produce memory leaks. Use tools like `valgrind` to check for memory issues.
@@ -92,4 +104,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-This README provides a comprehensive overview of the Minishell Tester, explaining its structure, usage, and test categories. You can modify it to include additional information or specifics about your testing suite.
+*Note: The provided script was not created by me.*
