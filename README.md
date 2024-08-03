@@ -90,7 +90,7 @@ The `tests/` directory contains various subdirectories, each focusing on a speci
 
 Below is an example of the tester output:
 
-![Example Output](example.png)
+![Example Output](example)
 
 ## Notes
 
